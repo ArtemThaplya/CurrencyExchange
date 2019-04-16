@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Create currency exchange transaction</title>
+	<link rel="stylesheet" media="screen" type="text/css" href="css/styles.css" >
+</head>
+<body>
+    <div id='kurs-com-ua-informer-main-ukraine-300x130-blue-container'>
+    <a href="//old.kurs.com.ua/informer"
+       id="kurs-com-ua-informer-main-ukraine-300x130-blue"
+       title="Курс валют информер Украина" rel="nofollow"
+       target="_blank">Информер курса валют</a></div>
+<script type='text/javascript'>
+    (function () {
+        var iframe = '<ifr' + 'ame src="//old.kurs.com.ua/informer/inf2?color=blue" width="300" height="130" ' +
+            'frameborder="0" vspace="0" scrolling="no" hspace="0"></ifr' + 'ame>';
+        var container = document.getElementById('kurs-com-ua-informer-main-ukraine-300x130-blue');
+        container.parentNode.innerHTML = iframe;
+    })();
+</script>
+<noscript><img src='//old.kurs.com.ua/static/images/informer/kurs.png' width='52' height='26'
+               alt='kurs.com.ua: курс валют в Украине!' title='Курс валют' border='0'/></noscript>
+
+<form class="contact_form" action="#" method="post" name="contact_form">
+    <ul>
+        <li>
+             <h2>Create currency exchange transaction</h2>
+             <span class="required_notification">* Denotes Required Field</span>
+        </li>
+        <li>
+            <label>Full Name:</label>
+            <input type="text"  placeholder="John Doe" required />
+        </li>
+        <li>
+            <label>Currency:</label>
+            <input type="text" name="email" placeholder="UAH or RUB or USD or EUR" required />
+            <span class="form_hint">Proper format "UAH"</span>
+        </li>
+        <li>
+            <label>Currency_base:</label>
+            <input type="text"  placeholder="UAH or RUB or USD or EUR" required />
+            <span class="form_hint">Proper format "USD"</span>
+        </li>
+        <li>
+            <label>Amount:</label>
+            <input type="number"  placeholder="2000" required pattern="(http|https)://.+"/>
+            <span class="form_hint">Proper format "2000"</span>
+        </li>
+
+        <li>
+        	<button class="submit" type="submit">Submit Form</button>
+        </li>
+    </ul>
+</form>
+</body>
+</html>
