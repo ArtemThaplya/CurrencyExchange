@@ -26,25 +26,14 @@
 
 <dependencies>
     <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-core</artifactId>
-        <version>${spring.version}</version>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+        <version>2.2.5.RELEASE</version>
     </dependency>
     <dependency>
         <groupId>org.springframework</groupId>
-        <artifactId>spring-context</artifactId>
-        <version>${spring.version}</version>
-    </dependency>
-    <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-webmvc</artifactId>
-        <version>${spring.version}</version>
-    </dependency>
-    <dependency>
-        <groupId>org.apache.tomcat</groupId>
-        <artifactId>tomcat</artifactId>
-        <version>9.0.16</version>
-        <type>pom</type>
+        <artifactId>spring-jdbc</artifactId>
+        <version>5.2.4.RELEASE</version>
     </dependency>
     <dependency>
         <groupId>javax.servlet</groupId>
@@ -59,6 +48,11 @@
         <scope>provided</scope>
     </dependency>
     <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-annotations</artifactId>
+        <version>2.10.0</version>
+    </dependency>
+    <dependency>
         <groupId>javax.servlet</groupId>
         <artifactId>jstl</artifactId>
         <version>1.2</version>
@@ -68,11 +62,7 @@
         <artifactId>mysql-connector-java</artifactId>
         <version>5.1.26</version>
     </dependency>
-    <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-jdbc</artifactId>
-        <version>${spring.version}</version>
-    </dependency>
+
     <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
         <artifactId>jackson-databind</artifactId>

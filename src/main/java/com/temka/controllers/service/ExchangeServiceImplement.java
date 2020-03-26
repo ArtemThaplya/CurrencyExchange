@@ -1,6 +1,6 @@
-package controllers.service;
+package com.temka.controllers.service;
 
-import beans.Transaction;
+import com.temka.beans.Transaction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

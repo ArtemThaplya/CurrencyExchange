@@ -26,7 +26,6 @@
 </script>
 <noscript><img src='//old.kurs.com.ua/static/images/informer/kurs.png' width='52' height='26'
                alt='kurs.com.ua: курс валют в Украине!' title='Курс валют' border='0'/></noscript>
-
 <form class="form-3" action='userMenu.html'>
     <p class="clearfix">
         <input type="submit" name="submit" value="User" />

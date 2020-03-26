@@ -1,4 +1,4 @@
-package beans;
+package com.temka.beans;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -10,8 +10,6 @@ import java.util.Date;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Transaction {
     private int id;
-
-
     private String fullName;
     private String ccy;
     private String base_ccy;

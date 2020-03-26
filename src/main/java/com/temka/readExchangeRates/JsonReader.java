@@ -1,4 +1,4 @@
-package readExchangeRates;
+package com.temka.readExchangeRates;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -6,7 +6,9 @@ import org.json.JSONObject;
 import java.io.*;
 import java.net.URL;
 import java.nio.charset.Charset;
+import org.springframework.stereotype.Component;
 
+@Component
 public class JsonReader {
     private static String readAll(Reader rd) throws IOException {
         StringBuilder sb = new StringBuilder();

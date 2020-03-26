@@ -1,12 +1,12 @@
-package dao;
+package com.temka.dao;
 
 
-import beans.Transaction;
+import com.temka.beans.Transaction;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
-import readExchangeRates.JsonReader;
+import com.temka.readExchangeRates.JsonReader;
 
 import javax.sql.DataSource;
 import java.io.IOException;
@@ -17,10 +17,12 @@ import java.util.List;
 @Repository("exchangeDao")
 public class ExchangeDaoImplement implements ExchangeDao {
     private static final String JSON_CURRENCY_RATE = "https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5";
-    @Autowired
     private JdbcTemplate template;
-    @Autowired
-    private JsonReader jsonReader;
+
+
+    public ExchangeDaoImplement(JdbcTemplate template) {
+        this.template = template;
+    }
 
     @Autowired
     public void setDataSource(DataSource dataSource) {
